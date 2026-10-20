@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outubro Rosa: Prevenção e Conscientização</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Font Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        pinkPrimary: '#d81b60',
+                        pinkDark: '#880e4f',
+                        pinkLight: '#fce4ec',
+                        sageGreen: '#4d7c5f',
+                        sageLight: '#e8f2ea',
+                        sageBorder: '#c3e0cb'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased min-h-screen flex flex-col justify-between">
+
+    <!-- Header Compacto -->
+    <header class="bg-white border-b border-pink-100 sticky top-0 z-50">
+        <div class="max-w-5xl mx-auto px-4 py-3 flex flex-wrap items-center justify-between gap-2">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 rounded-full bg-pinkPrimary flex items-center justify-center text-white text-sm shadow-sm">
+                    <i class="fa-solid fa-ribbon"></i>
+                </div>
+                <span class="font-bold text-pinkDark text-lg">Outubro Rosa</span>
+            </div>
+            
+            <!-- Estatística de Impacto Integrada ao Header -->
+            <div class="bg-sageLight border border-sageBorder px-3 py-1 rounded-full flex items-center gap-2 text-xs font-semibold text-sageGreen">
+                <i class="fa-solid fa-circle-check text-sageGreen"></i>
+                <span><strong class="text-emerald-800">+95% de chance de cura</strong> no diagnóstico precoce</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 py-6 space-y-8 flex-grow">
+
+        <!-- 1. O que é o Outubro Rosa (Resumo Direto) -->
+        <section class="bg-white p-6 rounded-2xl border border-pink-100 shadow-sm text-center md:text-left flex flex-col md:flex-row items-center gap-6">
+            <div class="flex-1">
+                <span class="text-xs font-bold uppercase tracking-wider text-pinkPrimary bg-pinkLight px-2.5 py-1 rounded-md">Conscientização</span>
+                <h1 class="text-2xl sm:text-3xl font-extrabold text-pinkDark mt-2 mb-2">Cuidar da saúde é um ato de amor próprio</h1>
+                <p class="text-sm text-gray-600 leading-relaxed">
+                    O <strong>Outubro Rosa</strong> é um movimento internacional para alertar sobre a prevenção e o diagnóstico precoce do câncer de mama — o tipo mais comum entre as mulheres no Brasil. Descobrir cedo garante tratamentos mais simples e altíssimas taxas de cura.
+                </p>
+            </div>
+        </section>
+
+        <!-- 2. Sinais de Alerta e Prevenção (6 Cartões Enxutos) -->
+        <section>
+            <div class="mb-4">
+                <h2 class="text-xl font-bold text-gray-900 flex items-center gap-2">
+                    <i class="fa-solid fa-heart-pulse text-pinkPrimary"></i> Sinais de Alerta & Prevenção
+                </h2>
+                <p class="text-xs text-gray-500">Conheça o seu corpo e adote hábitos protetores no dia a dia.</p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- Cartão 1 -->
+                <div class="bg-white p-4 rounded-xl border border-pink-100 shadow-sm flex items-start gap-3">
+                    <div class="w-10 h-10 rounded-lg bg-pinkLight text-pinkPrimary flex items-center justify-center flex-shrink-0 font-bold">
+                        <i class="fa-solid fa-[#000]"></i>
+                        <i class="fa-solid fa-hand-dots"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-gray-800 text-sm">Caroço ou Nódulo</h3>
+                        <p class="text-xs text-gray-600 mt-1 leading-snug">Nódulo duro e indolor na mama ou axila é o sinal mais frequente.</p>
+                    </div>
+                </div>
+
+                <!-- Cartão 2 -->
+                <div class="bg-white p-4 rounded-xl border border-pink-100 shadow-sm flex items-start gap-3">
+                    <div class="w-10 h-10 rounded-lg bg-pinkLight text-pinkPrimary flex items-center justify-center flex-shrink-0 font-bold">
+                        <i class="fa-solid fa-droplet"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-gray-800 text-sm">Alterações na Pele</h3>
+                        <p class="text-xs text-gray-600 mt-1 leading-snug">Pele enrugada ("casca de laranja"), vermelhidão ou secreção pelo mamilo.</p>
+                    </div>
+                </div>
+
+                <!-- Cartão 3 -->
+                <div class="bg-white p-4 rounded-xl border border-pink-100 shadow-sm flex items-start gap-3">
+                    <div class="w-10 h-10 rounded-lg bg-pinkLight text-pinkPrimary flex items-center justify-center flex-shrink-0 font-bold">
+                        <i class="fa-solid fa-hands-holding-child"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-gray-800 text-sm">Autoconhecimento</h3>
+                        <p class="text-xs text-gray-600 mt-1 leading-snug">Observe suas mamas ao tomar banho ou se trocar. Perceba mudanças normais.</p>
+                    </div>
+                </div>
+
+                <!-- Cartão 4 (Verde Suave) -->
+                <div class="bg-sageLight p-4 rounded-xl border border-sageBorder shadow-sm flex items-start gap-3">
+                    <div class="w-10 h-10 rounded-lg bg-white text-sageGreen flex items-center justify-center flex-shrink-0 font-bold shadow-xs">
+                        <i class="fa-solid fa-person-running"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-sageGreen text-sm">Hábitos Saudáveis</h3>
+                        <p class="text-xs text-gray-700 mt-1 leading-snug">Exercícios e boa alimentação evitam até 30% dos casos da doença.</p>
+                    </div>
+                </div>
+
+                <!-- Cartão 5 (Verde Suave) -->
+                <div class="bg-sageLight p-4 rounded-xl border border-sageBorder shadow-sm flex items-start gap-3">
+                    <div class="w-10 h-10 rounded-lg bg-white text-sageGreen flex items-center justify-center flex-shrink-0 font-bold shadow-xs">
+                        <i class="fa-solid fa-ban"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-sageGreen text-sm">Evite Álcool e Fumo</h3>
+                        <p class="text-xs text-gray-700 mt-1 leading-snug">O consumo de bebidas alcoólicas e tabaco aumenta os riscos de tumor.</p>
+                    </div>
+                </div>
+
+                <!-- Cartão 6 -->
+                <div class="bg-white p-4 rounded-xl border border-pink-100 shadow-sm flex items-start gap-3">
+                    <div class="w-10 h-10 rounded-lg bg-pinkLight text-pinkPrimary flex items-center justify-center flex-shrink-0 font-bold">
+                        <i class="fa-solid fa-x-ray"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-gray-800 text-sm">Mamografia de Rotina</h3>
+                        <p class="text-xs text-gray-600 mt-1 leading-snug">Exame capaz de identificar alterações mínimas antes de virarem nódulos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Passo a Passo do Atendimento no SUS e Mamografia -->
+        <section class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm">
+            <div class="mb-4 text-center md:text-left">
+                <h2 class="text-xl font-bold text-gray-900">Como funciona a Mamografia e Atendimento no SUS</h2>
+                <p class="text-xs text-gray-500">Diretrizes de saúde pública para rastreamento e exames gratuitos.</p>
+            </div>
+
+            <!-- Faixa com recomendação de idade -->
+            <div class="bg-pinkLight p-3.5 rounded-xl border border-pink-200 mb-6 flex items-center gap-3 text-xs sm:text-sm text-pinkDark font-medium">
+                <i class="fa-solid fa-calendar-check text-pinkPrimary text-lg flex-shrink-0"></i>
+                <span><strong>Recomendação Oficial:</strong> Mamografia a cada <strong>2 anos</strong> para mulheres de <strong>50 a 69 anos</strong>. A partir dos 40 anos, pode ser feita sob indicação médica.</span>
+            </div>
+
+            <!-- Passo a Passo Compacto -->
+            <div class="grid sm:grid-cols-4 gap-3 text-center">
+                <div class="p-3 rounded-lg bg-gray-50 border border-gray-100">
+                    <span class="w-6 h-6 bg-pinkPrimary text-white rounded-full inline-flex items-center justify-center text-xs font-bold mb-2">1</span>
+                    <h3 class="font-bold text-xs text-gray-800 mb-1">Posto de Saúde</h3>
+                    <p class="text-[11px] text-gray-500">Procure a Unidade Básica (UBS) mais próxima.</p>
+                </div>
+
+                <div class="p-3 rounded-lg bg-gray-50 border border-gray-100">
+                    <span class="w-6 h-6 bg-pinkPrimary text-white rounded-full inline-flex items-center justify-center text-xs font-bold mb-2">2</span>
+                    <h3 class="font-bold text-xs text-gray-800 mb-1">Consulta</h3>
+                    <p class="text-[11px] text-gray-500">Realize o exame clínico e tire suas dúvidas.</p>
+                </div>
+
+                <div class="p-3 rounded-lg bg-gray-50 border border-gray-100">
+                    <span class="w-6 h-6 bg-pinkPrimary text-white rounded-full inline-flex items-center justify-center text-xs font-bold mb-2">3</span>
+                    <h3 class="font-bold text-xs text-gray-800 mb-1">Agendamento</h3>
+                    <p class="text-[11px] text-gray-500">Receba a solicitação para a mamografia.</p>
+                </div>
+
+                <div class="p-3 rounded-lg bg-gray-50 border border-gray-100">
+                    <span class="w-6 h-6 bg-pinkPrimary text-white rounded-full inline-flex items-center justify-center text-xs font-bold mb-2">4</span>
+                    <h3 class="font-bold text-xs text-gray-800 mb-1">Acompanhamento</h3>
+                    <p class="text-[11px] text-gray-500">Retorne para avaliar os exames com o médico.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé Simples -->
+    <footer class="bg-gray-900 text-white py-6 border-t border-gray-800">
+        <div class="max-w-5xl mx-auto px-4 text-center space-y-3">
+            <p class="text-sm font-semibold text-pink-300">
+                <i class="fa-solid fa-ribbon mr-1"></i> Cuide de você e incentive as mulheres que você ama a se cuidarem!
+            </p>
+            <div class="flex flex-wrap justify-center gap-4 text-xs text-gray-400">
+                <span>Fontes:</span>
+                <a href="https://pessoal.ufrj.br/2025/10/outubro-rosa-mes-de-conscientizacao-sobre-o-cancer-de-mama/" target="_blank" class="hover:underline text-gray-300">UFRJ / INCA</a>
+                <span>•</span>
+                <a href="https://vencerocancer.org.br/cancer/outubro-rosa-2026/" target="_blank" class="hover:underline text-gray-300">Instituto Vencer o Câncer</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
